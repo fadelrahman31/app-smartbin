@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="jadwal.css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>SmartBin</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="home.html">SmartBin</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item ">
+            <a class="nav-link" href="statustps.html">Status TPS </a>
+            </li>
+            <li class="nav-item active">
+            <a class="nav-link" href="jadwal.html">Jadwal</a>
+            </li>
+            <li class="nav-item ">
+            <a class="nav-link" href="detailtps.html">Detail TPS</a>
+            </li>
+            <li class="nav-item ">
+            <a class="nav-link" href="device.html">Device</a>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Sign out</button>
+        </form>
+        </div>
+    </nav>
+    <p style="padding:10px;"></p>
+    <div class="container">
+        <h2>Jadwal Baru</h2>
+        <form action="/action_page.php">
+          <div class="form-group">
+            <label for="idlog">ID Log :</label>
+            <input type="text" class="form-control" id="idlog" placeholder="ID Log" name="log">
+          </div>
+          <div class="form-group">
+            <label for="idjalur">ID Jalur :</label>
+            <input type="text" class="form-control" id="idjalur" placeholder="ID Jalur" name="jalur">
+          </div>
+          <div class="form-group">
+            <label for="pic">Person in Charge :</label>
+            <input type="text" class="form-control" id="pic" placeholder="ID Jalur" name="person-in-charge">
+          </div>
+          <div class="form-group">
+            <label for="tot_station">Total Station :</label>
+            <input type="number" class="form-control" id="tot_station" placeholder="Total Station" name="station">
+          </div>
+          <div class="form-group">
+            <label for="tot_capacity">Total Capacity :</label>
+            <input type="number" class="form-control" id="tot_capacity" placeholder="Total Capacity" name="capacity">
+          </div>
+          <div class="form-group">
+            <label for="tot_petugas">Total Petugas :</label>
+            <input type="number" class="form-control" id="tot_petugas" placeholder="Total Petugas" name="petugas">
+          </div>
+          <div class="form-group">
+            <label for="tgl">Tanggal :</label>
+            <input type="date" class="form-control" id="tgl" placeholder="Tanggal" name="tanggal">
+          </div>
+          <div class="form-group">
+            <label for="jam_mulai">Jam Mulai :</label>
+            <input type="time" class="form-control" id="jam_mulai" placeholder="Jam Mulai" name="mulai">
+          </div>
+          <div class="form-group">
+            <label for="jam_selesai">Jam Selesai :</label>
+            <input type="time" class="form-control" id="jam_selesai" placeholder="Jam Selesai" name="selesai">
+          </div>
+          <button href="jadwal.html" type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    
+</body>
+</html>
