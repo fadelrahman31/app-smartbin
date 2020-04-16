@@ -3,7 +3,7 @@ var BASE_URL = "https://id-smartbin.herokuapp.com"
 
 $(document).ready(function(){
     $.ajax({
-        url: "https://id-smartbin.herokuapp.com/jadwal"
+        url: "https://id-smartbin.herokuapp.com/device"
     }).then(function(data) {
         console.log(data);
         // console.log(data.length);
@@ -18,15 +18,8 @@ $(document).ready(function(){
             '    <td>' + row[0] + '</td>\n' +
             '    <td>' + row[1] + '</td>\n' +
             '    <td>' + row[2] + '</td>\n' +
-            '    <td>' + row[3] + '</td>\n' +
-            '    <td>' + row[4] + '</td>\n' +
-            '    <td>' + row[5] + '</td>\n' +
-            '    <td>' + row[6] + '</td>\n' +
-            '    <td>' + row[7] + '</td>\n' +
-            '    <td>' + row[8] + '</td>\n' +
-            '    <td>' + row[9] + '</td>\n' +
             '</tr>';
-            $('#bodyjadwal').append(html);
+            $('#bodydevice').append(html);
         }
     });
 });

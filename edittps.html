@@ -6,11 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/all.css">
-    <link rel="stylesheet" href="css/statustps.css">
     <script src="js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="js/statustps.js"></script>
     <title>SmartBin</title>
+    <script src="js/edittps.js"></script>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -21,7 +20,7 @@
     
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
+            <li class="nav-item ">
             <a class="nav-link" href="statustps.html">Status TPS </a>
             </li>
             <li class="nav-item ">
@@ -30,7 +29,7 @@
             <li class="nav-item ">
             <a class="nav-link" href="detailtps.html">Detail TPS</a>
             </li>
-            <li class="nav-item ">
+            <li class="nav-item active">
             <a class="nav-link" href="device.html">Device</a>
             </li>
         </ul>
@@ -42,22 +41,19 @@
     </nav>
     <p style="padding:10px;"></p>
     <div class="container">
-        <div class="row col-md-6 col-md-offset-2 custyle">
-        <table class="table table-striped custab">
-            <tr>
-                <th>ID TPS</th>
-                <th>Waktu</th>
-                <th>Humidity(%)</th>
-                <th>Temperature(*C)</th>
-                <th>Latitude</th>
-                <th>Longitude</th>
-                <th>City</th>
-            </tr>
-            <tbody id="table-rows"></tbody>       
-        </table>
-        </div>
-        <!-- <p id="test">content: </p> -->
-    </div>
+        <h2>Edit Alokasi TPS</h2>
+        <form id="form">
+          <div class="form-group">
+            <label for="idtps">ID TPS :</label>
+            <input type="text" class="form-control" id="idtps" placeholder="ID TPS" name="idtps">
+          </div>
+          <div class="form-group">
+            <label for="alokasi">Alokasi Petugas :</label>
+            <input type="number" class="form-control" id="alokasi" placeholder="Alokasi Petugas" name="alokasi">
+          </div>
+          <button href="detailtps.html" type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
     
 </body>
 </html>

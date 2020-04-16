@@ -3,7 +3,7 @@ var BASE_URL = "https://id-smartbin.herokuapp.com"
 
 $(document).ready(function(){
     $.ajax({
-        url: "https://id-smartbin.herokuapp.com/jadwal"
+        url: "https://id-smartbin.herokuapp.com/tps"
     }).then(function(data) {
         console.log(data);
         // console.log(data.length);
@@ -22,11 +22,9 @@ $(document).ready(function(){
             '    <td>' + row[4] + '</td>\n' +
             '    <td>' + row[5] + '</td>\n' +
             '    <td>' + row[6] + '</td>\n' +
-            '    <td>' + row[7] + '</td>\n' +
-            '    <td>' + row[8] + '</td>\n' +
-            '    <td>' + row[9] + '</td>\n' +
+            '<td class="text-center">'+"<a class='btn btn-info btn-xs' "+'href="edittps.html?idtps='+row[0]+'"><span class="glyphicon glyphicon-edit"></span> Edit</a></td>' +
             '</tr>';
-            $('#bodyjadwal').append(html);
+            $('#bodydetailtps').append(html);
         }
     });
 });
