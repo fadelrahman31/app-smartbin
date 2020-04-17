@@ -28,7 +28,7 @@
             <li class="nav-item ">
             <a class="nav-link" href="detailtps.html">Detail TPS</a>
             </li>
-            <li class="nav-item active">
+            <li class="nav-item active"></li>
             <a class="nav-link" href="device.html">Device</a>
             </li>
         </ul>
@@ -40,15 +40,31 @@
     </nav>
     <p style="padding:10px;"></p>
     <div class="container">
-        <h2>Device TPS</h2>
+        <h2>Detail TPS</h2>
         <form action="/action_page.php">
-          <div class="form-group">
-            <label for="iddevice">ID Device :</label>
-            <input type="text" class="form-control" id="iddevice" placeholder="ID Device" name="device">
-          </div>
           <div class="form-group">
             <label for="idtps">ID TPS :</label>
             <input type="text" class="form-control" id="idtps" placeholder="ID TPS" name="tps">
+          </div>
+          <div class="form-group">
+            <label for="nama">Nama TPS :</label>
+            <input type="text" class="form-control" id="pic" placeholder="ID Jalur" name="person-in-charge">
+          </div>
+          <div class="form-group">
+            <label for="kelurahan">Kelurahan :</label>
+            <input type="text" class="form-control" id="kelurahan" placeholder="Kelurahan" name="kel">
+          </div>
+          <div class="form-group">
+            <label for="kecamatan">Kecamatan :</label>
+            <input type="text" class="form-control" id="kecamatan" placeholder="Kecamatan" name="kec">
+          </div>
+          <div class="form-group">
+            <label for="region">Region :</label>
+            <input type="text" class="form-control" id="region" placeholder="Region" name="reg">
+          </div>
+          <div class="form-group">
+            <label for="alokasi">Alokasi Petugas :</label>
+            <input type="number" class="form-control" id="alokasi" placeholder="Alokasi Petugas" name="petugas">
           </div>
           <button href="device.html" type="submit" class="btn btn-primary">Submit</button>
         </form>
