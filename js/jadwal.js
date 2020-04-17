@@ -25,6 +25,7 @@ $(document).ready(function(){
             '    <td>' + row[7] + '</td>\n' +
             '    <td>' + row[8] + '</td>\n' +
             '    <td>' + row[9] + '</td>\n' +
+            '<td class="text-center">'+"<a class='btn btn-info btn-xs' "+'href="edittps.html?idtps='+row[0]+'"><span class="glyphicon glyphicon-edit"></span> Tandai Selesai</a></td>' +
             '</tr>';
             $('#bodyjadwal').append(html);
         }

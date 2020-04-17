@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/jadwal.css">
     <script src="js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/tambahjadwal.js"></script>
     <title>SmartBin</title>
 </head>
 <body>
@@ -42,7 +43,7 @@
     <p style="padding:10px;"></p>
     <div class="container">
         <h2>Jadwal Baru</h2>
-        <form action="/action_page.php">
+        <form id="form">
           <div class="form-group">
             <label for="idlog">ID Log :</label>
             <input type="text" class="form-control" id="idlog" placeholder="ID Log" name="log">
@@ -53,7 +54,7 @@
           </div>
           <div class="form-group">
             <label for="pic">Person in Charge :</label>
-            <input type="text" class="form-control" id="pic" placeholder="ID Jalur" name="person-in-charge">
+            <input type="text" class="form-control" id="pic" placeholder="No Pegawai PIC" name="person-in-charge">
           </div>
           <div class="form-group">
             <label for="tot_station">Total Station :</label>
@@ -78,6 +79,10 @@
           <div class="form-group">
             <label for="jam_selesai">Jam Selesai :</label>
             <input type="time" class="form-control" id="jam_selesai" placeholder="Jam Selesai" name="selesai">
+          </div>
+          <div class="form-group">
+            <label for="target_station">Target Station :</label>
+            <input type="text" class="form-control" id="target_station" placeholder="Target Station (id_tps#1,id_tps#2, ...)" name="target">
           </div>
           <button href="jadwal.html" type="submit" class="btn btn-primary">Submit</button>
         </form>
