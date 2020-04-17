@@ -1,13 +1,15 @@
 var BASE_URL = "https://id-smartbin.herokuapp.com"
 
-//var BASE_URL = "http://127.0.0.1:5000"
-
-/*function getDataTPS(){
-    $.get(BASE_URL + "/data/tps", function(data){
-        console.log("yo");
-        console.log(data);
+function deleteData(id_tps){
+    $.ajax({
+        url: "https://id-smartbin.herokuapp.com/data/tps/"+id_tps,
+        type: "DELETE",
+        success: function(){
+            alert("Berhasil selesaikan data tps!");
+            location.replace("statustps.html");
+        }
     })
-}*/
+}
 
 $(document).ready(function(){
     //this.getDataTPS();
@@ -31,6 +33,7 @@ $(document).ready(function(){
             '    <td>' + row[4] + '</td>\n' +
             '    <td>' + row[5] + '</td>\n' +
             '    <td>' + row[6] + '</td>\n' +
+            '<td class="text-center">'+"<a class='btn btn-info btn-xs' "+'href="#" onclick="deleteData(\'' + row[0] +'\')"> Tandai Selesai</a></td>' +
             '</tr>';
             $('#table-rows').append(html);
         }
