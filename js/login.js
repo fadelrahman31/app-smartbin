@@ -20,10 +20,10 @@ $(()=>{
 
 document.getElementById("sign_in").onclick= function() {optChange()};
 function optChange(e) {
-    if ($("#opt1").is(":checked")){
+    if ($("#opt2").is(":checked")){
         window.location.replace("home.html");
      }
-     else if (($("#opt2").is(":checked"))){
+     else if (($("#opt1").is(":checked"))){
         window.location.replace("pengguna.html");
      }
 }

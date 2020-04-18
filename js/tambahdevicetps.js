@@ -9,7 +9,7 @@ $(document).ready(function(){
         var dat = 
         {
             "id_device"         : iddevice,
-            "id_tps"           : idtps,
+            "id_tps"            : idtps,
             "is_connected"      : "true"
         };
         var data = JSON.stringify(dat);

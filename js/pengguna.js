@@ -19,10 +19,6 @@ $(document).ready(function(){
             '    <td>' + row[1] + '</td>\n' +
             '    <td>' + row[2] + '</td>\n' +
             '    <td>' + row[3] + '</td>\n' +
-            '    <td>' + row[4] + '</td>\n' +
-            '    <td>' + row[5] + '</td>\n' +
-            '    <td>' + row[6] + '</td>\n' +
-            '<td class="text-center">'+"<a class='btn btn-info btn-xs' "+'href="edittps.html?idtps='+row[0]+'"><span class="glyphicon glyphicon-edit"></span> Edit</a></td>' +
             '</tr>';
             $('#bodypengguna').append(html);
         }

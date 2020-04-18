@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <link rel="stylesheet" href="css/bootstrap.min.css">
+            <link rel="stylesheet" href="css/all.css">
+            <link rel="stylesheet" href="css/detailtps.css">
+            <script src="js/bootstrap.min.js"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+            <script src="js/tambahpengguna.js"></script>
+            <title>SmartBin</title>
+            </head>
+<body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="pengguna.html">SmartBin</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+            
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item ">
+                    <a class="nav-link" href="pengguna.html">Pengguna</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <a href="login.html" class="btn btn-secondary btn-sm active" role="button" aria-pressed="true">Sign Out</a>
+                </form>
+                </div>
+            </nav>
+    <p style="padding:10px;"></p>
+    <div class="container">
+        <h2>Tambah Pengguna</h2>
+        <form id="form">
+          <div class="form-group">
+            <label for="idtps">Nomor Pegawai :</label>
+            <input type="number" class="form-control" id="nopegawai" placeholder="No Pegawai" name="tps">
+          </div>
+          <div class="form-group">
+            <label for="nama">Username :</label>
+            <input type="text" class="form-control" id="username" placeholder="Username" name="username">
+          </div>
+          <div class="form-group">
+            <label for="kelurahan">Password :</label>
+            <input type="text" class="form-control" id="password" placeholder="Password" name="password">
+          </div>
+          <div class="form-group">
+            <label for="kecamatan">Tipe Pegawai :</label>
+            <input type="text" class="form-control" id="tipe" placeholder="Tipe Pegawai" name="tipe">
+          </div>
+          <button href="pengguna.html" type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    
+</body>
+</html>
