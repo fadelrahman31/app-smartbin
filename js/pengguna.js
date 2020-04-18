@@ -3,7 +3,7 @@ var BASE_URL = "https://id-smartbin.herokuapp.com"
 
 $(document).ready(function(){
     $.ajax({
-        url: "https://id-smartbin.herokuapp.com/user"
+        url: "https://id-smartbin.herokuapp.com/pengguna"
     }).then(function(data) {
         console.log(data);
         // console.log(data.length);
